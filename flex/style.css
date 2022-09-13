@@ -1,0 +1,38 @@
+.flex-parent{
+    display:flex;
+    gap:2rem;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.flex-child{
+    width:28%;
+    border-radius: 4px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding:20px;
+}
+.flex-child img{
+    height:200px;
+    width: 100%;
+}
+.flex-child button{
+    width:100%;
+    padding:10px;
+    background:#189bec;
+    color:white;
+    font-size: 18px;
+    border:2px solid #189bec;
+    border-radius:4px;
+}
+.flex-child button:hover{
+    color:#189bec;
+    background:white;
+    border:2px solid #189bec;
+    cursor:pointer;
+}
+
+@media screen and (max-width:768px){
+    .flex-child{
+        width:90%;
+       
+    }
+}
