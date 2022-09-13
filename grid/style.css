@@ -1,0 +1,38 @@
+.parent-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:2rem;
+    width:95%;
+    margin:auto;
+}
+.child-grid{
+    padding:20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius:4px;
+}
+.child-grid img{
+    height:200px;
+    width:100%;
+
+}
+.child-grid button{
+    width:100%;
+    padding:10px;
+    background:#189bec;
+    border: 2px solid #189bec;
+    color:#fff;
+    font-size:18px;
+    border-radius:4px;
+}
+.child-grid button:hover{
+    background:#fff;
+    border: 2px solid #189bec;
+    color:#189bec;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px){
+    .parent-grid{
+        grid-template-columns:1fr;  
+    }
+}
